@@ -1,0 +1,32 @@
+[
+	{
+		"Id":"1",
+		"NamaProyek": "1 Park Avenue",
+		"Date": "1 Agustus 2017",
+		"Inspector": "Kusuma Wibowo, Putra Adi Pradana",
+		"StatusStart": "Not Started",
+		"ScheduleStatus": "Re-Schedule",
+		"Type":"Weekly",
+		"IdHead":"1"
+	},
+	{
+		"Id":"2",
+		"NamaProyek": "Sequis Tower",
+		"Date": "14 Agustus 2017",
+		"Inspector": "Kusuma Wibowo, Putra Adi Pradana",
+		"StatusStart": "Not Started",
+		"ScheduleStatus": "Re-Schedule",
+		"Type":"Weekly",
+		"IdHead":"1"
+	},
+	{
+		"Id":"3",
+		"NamaProyek": "Green Bay",
+		"Date": "25 Agustus 2017",
+		"Inspector": "Kusuma Wibowo, Putra Adi Pradana",
+		"StatusStart": "Not Started",
+		"ScheduleStatus": "Re-Schedule",
+		"Type":"Monthly",
+		"IdHead":"2"
+	}
+]

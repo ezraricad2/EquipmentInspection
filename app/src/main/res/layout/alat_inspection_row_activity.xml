@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginBottom="7dp"
+    app:cardCornerRadius="7dp"
+    >
+
+    <RelativeLayout
+        android:id="@+id/messageContainer"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@drawable/list_selector"
+        android:clickable="true"
+       >
+
+        <TextView
+            android:id="@+id/tvFileName"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="@dimen/common_5_dp"
+            android:maxLines="2"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:text="Item test text" />
+
+        <TextView
+            android:id="@+id/tvInspectionStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Status Request"
+            android:textColor="@color/white"
+            android:textSize="10dp"
+            android:layout_marginTop="@dimen/common_5_dp"
+            android:layout_below="@+id/tvFileName"
+            android:layout_alignStart="@+id/tvFileName" />
+
+        <TextView
+            android:id="@+id/tvValueBased"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textSize="@dimen/common_30_dp"
+            android:textColor="@color/colorPrimary"
+            android:layout_alignBaseline="@+id/textView17"
+            android:layout_alignBottom="@+id/textView17"
+            android:layout_alignEnd="@+id/textView3"
+            android:textStyle=""/>
+
+        <TextView
+            android:id="@+id/textView17"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="/"
+            android:textSize="@dimen/common_30_dp"
+            android:layout_below="@+id/textView3"
+            android:layout_toStartOf="@+id/tvValueBased" />
+
+        <TextView
+            android:id="@+id/tvValueProgress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/common_30_dp"
+            android:layout_alignBaseline="@+id/textView17"
+            android:layout_alignBottom="@+id/textView17"
+            android:layout_toStartOf="@+id/textView17" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/tvFileName"
+            android:layout_marginRight="@dimen/common_5_dp"
+            android:text="Temuan"
+            android:textSize="12dp"
+            android:textAllCaps="true"
+            android:textStyle="bold" />
+
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

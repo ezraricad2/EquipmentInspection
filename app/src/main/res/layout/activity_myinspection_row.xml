@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginBottom="7dp"
+    app:cardCornerRadius="7dp"
+    >
+
+    <RelativeLayout
+        android:id="@+id/rootView"
+        android:layout_width="match_parent"
+        android:layout_height="125dp"
+        android:background="@drawable/list_selector"
+        android:clickable="true">
+
+        <TextView
+            android:id="@+id/tvNamaTower"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/ivStartStatus"
+            android:layout_marginLeft="15dp"
+            android:maxLines="2"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <View
+            android:id="@+id/view3"
+            android:layout_width="wrap_content"
+            android:layout_height="0.5dp"
+            android:layout_below="@+id/tvNamaTower"
+            android:layout_marginLeft="@dimen/common_15_dp"
+            android:layout_marginRight="@dimen/common_15_dp"
+            android:layout_marginTop="@dimen/common_3_dp"
+            android:background="#c0c0c0" />
+
+        <View
+            android:id="@+id/view2"
+            android:layout_width="wrap_content"
+            android:layout_height="0.5dp"
+            android:layout_alignParentBottom="true"
+            android:background="#c0c0c0" />
+
+        <TextView
+            android:id="@+id/tvStartStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginLeft="@dimen/common_5_dp"
+            android:layout_marginRight="@dimen/common_5_dp"
+            android:layout_marginTop="@dimen/common_10_dp"
+            android:text="Status Request"
+            android:textColor="@color/my_red"
+            android:textSize="10dp"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tvNoInv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/tvNamaTower"
+            android:layout_below="@+id/tvNamaTower"
+            android:layout_marginTop="@dimen/common_5_dp"
+            android:text="Date"
+            android:textSize="12dp" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/tvNoInv"
+            android:layout_below="@+id/tvNoInv"
+            android:layout_marginTop="@dimen/common_1_dp"
+            android:text="Inspector"
+            android:textSize="12dp" />
+
+        <TextView
+            android:id="@+id/tvDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvNamaTower"
+            android:layout_marginStart="36dp"
+            android:layout_marginTop="@dimen/common_5_dp"
+            android:layout_toEndOf="@+id/tvNoInv"
+            android:text="TextView"
+            android:textSize="12dp" />
+
+        <TextView
+            android:id="@+id/tvInspector"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/tvDate"
+            android:layout_alignTop="@+id/textView2"
+            android:layout_toStartOf="@+id/btnReschedule"
+            android:maxLines="5"
+            android:text="TextView"
+            android:textStyle="bold"
+            android:textColor="@color/custom_background_today"
+            android:textSize="12dp" />
+
+        <ImageView
+            android:id="@+id/ivStartStatus"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/tvStartStatus"
+            android:layout_marginRight="@dimen/common_10_dp"
+            android:layout_marginTop="@dimen/common_5_dp"
+            android:tint="@color/weixin_point_background"
+            android:visibility="invisible"
+            app:srcCompat="@drawable/baseline_check_circle_black_36" />
+
+        <ImageView
+            android:id="@+id/ivStartStatus2"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/tvStartStatus"
+            android:layout_marginRight="@dimen/common_10_dp"
+            android:layout_marginTop="@dimen/common_5_dp"
+            android:tint="@color/my_red"
+            android:visibility="invisible"
+            app:srcCompat="@drawable/baseline_info_black_36" />
+
+        <Button
+            android:id="@+id/btnReschedule"
+            style="@style/commonButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text=" Reschedule "
+            android:textSize="12dp"
+            android:layout_below="@+id/view3"
+            android:layout_marginTop="@dimen/common_5_dp"
+            android:layout_alignEnd="@+id/ivStartStatus" />
+
+        <TextView
+            android:id="@+id/tvDateOutstanding"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvStartStatus"
+            android:layout_marginRight="@dimen/common_5_dp"
+            android:layout_marginTop="@dimen/common_5_dp"
+            android:layout_toStartOf="@+id/ivStartStatus"
+            android:text="TextView"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

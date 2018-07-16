@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/custom_bg_ripple"
+    android:orientation="horizontal"
+    android:padding="5dip"
+    android:id="@+id/message_container">
+
+    <TextView
+        android:id="@+id/tvItemName"
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/common_5_dp"
+        android:layout_marginTop="@dimen/common_5_dp"
+        android:text="Item Name"
+        android:textColor="@color/icon_gray"
+        android:textSize="14dip"
+        android:textStyle="bold"
+        android:maxLines="3"/>
+
+    <TextView
+        android:id="@+id/tvEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/tvItemName"
+        android:layout_below="@+id/tvItemName"
+        android:text="Email" />
+
+    <TextView
+        android:id="@+id/tvAsal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/tvEmail"
+        android:layout_below="@+id/tvEmail"
+        android:text="Asal" />
+
+    <TextView
+        android:id="@+id/tvStatusRequest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tvItemName"
+        android:layout_alignBottom="@+id/tvItemName"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="@dimen/common_10_dp"
+        android:text="Status Request"
+        android:textColor="@color/white"/>
+
+    <TextView
+        android:id="@+id/tvId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvItemName"
+        android:layout_marginLeft="@dimen/common_5_dp"
+        android:text="Zona"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/btnItemPost"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/tvStatusRequest"
+        android:layout_toEndOf="@+id/tvItemName"
+        android:background="@drawable/rounded_button_login"
+        android:backgroundTint="@color/colorPrimary"
+        android:text="SET REGIS"
+        android:textColor="@color/white"
+        android:textSize="16dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnItemPost2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/tvStatusRequest"
+        android:layout_toEndOf="@+id/tvItemName"
+        android:background="@drawable/rounded_button_login"
+        android:backgroundTint="@color/lighter_gray"
+        android:text="REGISTED"
+        android:textColor="@color/icon_gray"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+</RelativeLayout>

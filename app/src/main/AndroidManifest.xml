@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.totalbp.equipmentinspection">
+
+    <uses-feature android:name="android.hardware.camera" android:required="true" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.totalbp.equipmentinspection.fileprovider.READ" />
+
+    <application
+        android:name="com.totalbp.equipmentinspection.controller.MMController"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity
+            android:name="com.totalbp.equipmentinspection.MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="com.totalbp.equpmentinspection.main_action" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.totalbp.equipmentinspection.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true"
+            android:readPermission="com.totalbp.equipmentinspection.fileprovider.READ">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <activity
+            android:name="com.totalbp.equipmentinspection.LoginActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateVisible|adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.totalbp.equipmentinspection.activity.AlatGroupActivity"
+            android:parentActivityName="com.totalbp.equipmentinspection.MainActivity"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <activity
+            android:name="com.totalbp.equipmentinspection.activity.AlatInspectionActivity"
+            android:parentActivityName="com.totalbp.equipmentinspection.activity.AlatGroupActivity"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <activity
+            android:name="com.totalbp.equipmentinspection.activity.FormAlatInspectionActivity"
+            android:parentActivityName="com.totalbp.equipmentinspection.activity.AlatGroupActivity"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <activity
+            android:name="com.totalbp.equipmentinspection.activity.FormInputAlatInspectionActivity"
+            android:parentActivityName="com.totalbp.equipmentinspection.activity.FormAlatInspectionActivity"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="92e43ad1f1196bc25216b7c80735b9d93365a35e" />
+    </application>
+
+</manifest>

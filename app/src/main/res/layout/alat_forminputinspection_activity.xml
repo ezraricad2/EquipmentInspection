@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/analysis_line_gray">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="@dimen/common_10_dp"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tvNamaAlat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/tvNoInv"
+                android:layout_alignStart="@+id/tvNoInv"
+                android:text="TextView"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+            <View
+                android:id="@+id/view3"
+                android:layout_width="wrap_content"
+                android:layout_height="0.5dp"
+                android:layout_below = "@+id/tv1"
+                android:layout_marginLeft="@dimen/common_5_dp"
+                android:layout_marginRight="@dimen/common_5_dp"
+                android:layout_marginTop="@dimen/common_3_dp"
+                android:background="#c0c0c0" />
+
+            <TextView
+                android:id="@+id/tv1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/common_5_dp"
+                android:layout_marginTop="@dimen/common_5_dp"
+                android:layout_weight="1"
+                android:text="Nama Alat" />
+
+            <TextView
+                android:id="@+id/tvInv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/tv1"
+                android:layout_marginLeft="@dimen/common_5_dp"
+                android:layout_marginTop="@dimen/common_5_dp"
+                android:layout_weight="1"
+                android:text="Inventaris" />
+
+            <View
+                android:id="@+id/view8"
+                android:layout_width="wrap_content"
+                android:layout_height="0.5dp"
+                android:layout_below = "@+id/tvInv"
+                android:layout_marginLeft="@dimen/common_5_dp"
+                android:layout_marginRight="@dimen/common_5_dp"
+                android:layout_marginTop="@dimen/common_3_dp"
+                android:background="#c0c0c0" />
+
+            <TextView
+                android:id="@+id/tvNoInv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv1"
+                android:layout_marginStart="18dp"
+                android:layout_marginTop="@dimen/common_5_dp"
+                android:layout_toEndOf="@+id/tv1"
+                android:text="TextView"
+                android:textColor="@color/custom_background_today"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvNoSeri"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/tvNoInv"
+                android:layout_below="@+id/tvNoInv"
+                android:text="TextView"
+                android:layout_marginTop="@dimen/common_5_dp"
+                android:textColor="@color/custom_background_today"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView25"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/tvInv"
+                android:layout_below="@+id/tvInv"
+                android:layout_marginBottom="@dimen/common_5_dp"
+                android:layout_marginTop="@dimen/common_5_dp"
+                android:layout_weight="1"
+                android:text="No. Seri" />
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/list_selector"
+            android:clickable="true">
+
+            <TextView
+                android:id="@+id/tvNamaInspeksi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="6"
+                android:text="TextView"
+                android:textColor="@color/custom_background_today"
+                android:textStyle="bold"
+                android:layout_below="@+id/tvInv"
+                android:layout_alignStart="@+id/tvInv"/>
+
+            <TextView
+                android:id="@+id/tvInv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/common_5_dp"
+                android:layout_marginTop="@dimen/common_5_dp"
+                android:layout_weight="1"
+                android:text="Nama Inspeksi"/>
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="17dp"
+                android:layout_height="17dp"
+                android:layout_alignTop="@+id/tvInv"
+                android:layout_toEndOf="@+id/tvInv"
+                android:layout_weight="1"
+                android:visibility="invisible"
+                app:srcCompat="@drawable/ic_info_outline_black_36dp" />
+
+            <View
+                android:id="@+id/view3"
+                android:layout_width="wrap_content"
+                android:layout_height="0.5dp"
+                android:layout_below = "@+id/tvNamaInspeksi"
+                android:layout_marginLeft="@dimen/common_5_dp"
+                android:layout_marginRight="@dimen/common_5_dp"
+                android:layout_marginTop="@dimen/common_3_dp"
+                android:background="#c0c0c0" />
+
+            <TextView
+                android:id="@+id/textView21"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/common_5_dp"
+                android:layout_alignStart="@+id/tvNamaInspeksi"
+                android:layout_below="@+id/tvNamaInspeksi"
+                android:layout_weight="1"
+                android:text="Nama Inspeksi Detil" />
+
+            <TextView
+                android:id="@+id/namaItemTittle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/textView21"
+                android:layout_below="@+id/textView21"
+                android:layout_marginBottom="@dimen/common_10_dp"
+                android:maxLines="6"
+                android:text="Dialog Tittle"
+                android:textColor="@color/custom_background_today"
+                android:textStyle="bold" />
+
+
+            <ImageView
+                android:id="@+id/ivDialogInfo"
+                android:layout_width="17dp"
+                android:layout_height="17dp"
+                android:layout_alignTop="@+id/textView21"
+                android:layout_toEndOf="@+id/textView21"
+                android:visibility="invisible"
+                app:srcCompat="@drawable/ic_info_outline_black_36dp" />
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+
+        <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/dialogLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView18"
+                android:layout_marginTop="@dimen/common_5_dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                android:text="FORM INSPECTION"
+                android:textSize="16dp"
+                android:textStyle="bold"/>
+
+            <LinearLayout
+                android:id="@+id/layout_middle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/layout_top"
+                android:layout_marginBottom="@dimen/common_10_dp"
+                android:background="@color/white"
+                android:baselineAligned="false"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/common_5_dp">
+
+                <EditText
+                    android:id="@+id/etComment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="Isi Komentar"
+                    android:inputType="textPersonName"
+                    android:maxLines="5" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_middle2"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/layout_top"
+                android:layout_marginBottom="@dimen/common_10_dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:baselineAligned="false"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/ivCamera"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="@dimen/common_15_dp"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/ic_camera_alt_black_36dp"
+                    android:background="@drawable/image_blue_selector"
+                    android:tint="@color/icon_gray"
+                    android:clickable="true"/>
+
+                <ImageView
+                    android:id="@+id/ivAttachment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="@dimen/common_20_dp"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/ic_attach_file_black_36dp"
+                    android:background="@drawable/image_blue_selector"
+                    android:tint="@color/icon_gray"
+                    android:clickable="true"/>
+
+                <Button
+                    android:id="@+id/btnDialogSparePart"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="@dimen/common_20_dp"
+                    android:text="+ Sparepart" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_middle2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/layout_top"
+                android:layout_marginBottom="@dimen/common_10_dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:baselineAligned="false"
+                android:orientation="horizontal">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recyclerview"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnInspeksiSubmit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@color/colorPrimary"
+                    android:text="Submit"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+        </LinearLayout>
+        </ScrollView>
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>
